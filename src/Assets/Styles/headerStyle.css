@@ -1,0 +1,158 @@
+.bg_header {
+    background-color: var(--headerbg-color);
+}
+
+.help_text_top {
+    color: var(--mainimportantext-color);
+}
+
+.help_text_bottom {
+    color: var(--helpnumber-text-color);
+}
+
+.headerDropdownIcon{
+    fill: var(--headerbg-color);
+}
+
+.fit {
+    object-fit: scale-down;
+}
+
+.loginButton {
+    padding: 8px 17px;
+    border-radius: 8px;
+    background-color: transparent !important;
+    border: 1px solid var(--login-border-color);
+    color:var(--login-text-color);
+}
+
+.language {
+
+    img {
+        object-fit: cover;
+    }
+}
+
+
+/* Logo */
+.logo {
+    max-width: 150px;
+}
+
+/* HelpDesk Logo */
+.helpdesk-logo {
+    max-width: 40px;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hamburger-icon {
+    width: 25px;
+    height: 3px;
+    background-color: #444;
+    display: block;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Slide Menu */
+.slide-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1049;
+    transition: right 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.slide-menu.open {
+    right: 0;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.close-menu {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu-content {
+    margin-top: 20px;
+}
+
+.language img {
+    max-width: 27px;
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .help_text_top,
+    .help_text_bottom {
+        font-size: 12px;
+    }
+
+    .loginButton {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+}
+
+
+
+.language .cursor-pointer {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    min-width: 150px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 0;
+    z-index: 1000;
+    top: 65px;
+}
+
+  
+.dropdown-item {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background: #f0f0f0;
+}
+
+
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1050;
+}
+
+
+
+
+
+

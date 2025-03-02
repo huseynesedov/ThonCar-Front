@@ -1,0 +1,96 @@
+footer,
+article {
+  background-color: var(--footer-bg-color);
+  color: white;
+}
+
+.m-b {
+  margin-bottom: 0 !important;
+}
+
+.text_footer {
+  color: var(--footer-textOne-color);
+}
+
+
+.footer-signup form button {
+  min-width: 120px;
+  width: 100%;
+}
+
+.footer-form input,
+.footer-form button {
+  max-width: 300px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .footer-form {
+    flex-direction: column;
+  }
+
+  .footer-form input,
+  .footer-form button {
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.text_footer {
+  font-size: 14px;
+  text-align: center;
+}
+
+.nav li a {
+  color: #6c757d;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav li a:hover {
+  color: #007bff;
+}
+
+.footerButton {
+  outline: none;
+  border: none;
+  padding: 9px 20px;
+  border-radius: 8px;
+  margin-left: 10px;
+  color: var(--footer-button-text-color);
+  background-color: var(--footer-buttonbg-color);
+}
+
+/* Genel stiller */
+.text_footer {
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.fs-19 {
+  font-size: 19px;
+}
+
+.nav li a {
+  color: #6c757d;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav li a:hover {
+  color: #007bff;
+}
+
+/* Responsive düzenlemeler */
+@media (max-width: 768px) {
+  .text_footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav {
+    justify-content: center !important;
+  }
+}

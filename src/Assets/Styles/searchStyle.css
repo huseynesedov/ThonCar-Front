@@ -1,0 +1,87 @@
+.search-car-card{
+    display: flex;
+    flex-direction: column;
+    width: 625px;
+    background-color: red;
+    padding: 10px;
+    border-radius: 6px;
+    border: 0.84px solid var(--search-card-border);
+}
+
+.search-card-top{
+    display: flex;
+    border-bottom: 1px solid var(--search-card-border);
+    padding-bottom: 10px;
+    margin-left: 10px;
+    .search-card-image{
+        margin-right: 10px;
+        border-right: 1px solid var(--search-card-border);
+    }
+}
+
+.search-card-top .car-brand{
+    display: flex;
+}
+
+.search-card-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.search-card-content-left .car-brand{
+    font-weight: 600;
+    font-size: 20px;
+    gap: 2px;
+}
+
+.search-card-top .car-features{
+    display: flex;
+    gap: 16px;
+    font-weight: 400;
+    font-size: 9px;
+    color: var(--search-card-features);
+    h6{
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+.search-card-content-right{
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    color: var(--search-card-price);
+    h4{
+        display: flex;
+        font-size: 13px;
+        font-weight: 500;
+        border-bottom: 1px solid red;
+        h5{
+            font-size: 15px;
+        }
+    }
+    h3{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    h2{
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+.search-card-bottom{
+    display: flex;
+}
+
+.search-card-bottom span {
+    display: flex;
+}
+
+
+.search-card-bottom h5{
+    color: var(--search-card-text);
+}

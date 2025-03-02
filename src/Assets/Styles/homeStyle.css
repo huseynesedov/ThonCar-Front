@@ -1,0 +1,718 @@
+/* Section 1 */
+.dropdown-menu2 {
+    min-width: 150px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0px 0;
+    z-index: 1000;
+    top: 65px;
+}
+
+.locationDropMain {
+    width: 100%;
+    max-width: 225px;
+    left: 10px;
+    top: 70px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 999;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.locationDrop {
+    border-bottom: 1px solid #4444;
+    padding: 10px 0;
+}
+
+.locationDrop-icon {
+    font-size: 25px;
+}
+
+.metro-logo {
+    max-width: 20px;
+    max-height: 15px;
+    height: 100%;
+}
+
+.homeBgImage {
+    background-image: url(../Images/home_sectionbg.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    height: auto;
+}
+
+.searchText {
+    color: var(--mainimportantext-color);
+}
+
+.searchText2 {
+    color: var(--mainimportantext-color);
+    text-align: center;
+}
+
+.searchPText {
+    color: var(--search-text-color);
+}
+
+.vibeRideButton {
+    padding: 20px 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background-color: var(--viberide-buttonbg-color);
+}
+
+.vibeStayButton {
+    padding: 20px 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: rgba(44, 65, 84, 0.91);
+}
+
+.vibeTourButton {
+    padding: 20px 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: rgba(44, 65, 84, 0.91);
+}
+
+
+
+
+
+.searchContainer {
+    padding: 12px 32px;
+    border-radius: 12px;
+}
+
+.border_right {
+    border-right: 1px solid #ACACAC;
+}
+
+.search {
+    background-color: var(--search-bg-color);
+    padding: 10px 50px;
+    color: white;
+    border-radius: 8px;
+}
+
+
+.date-picker-input {
+    width: 65%;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.date-picker-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* DatePicker input için özel stil */
+.custom-datepicker-input {
+    background-color: #fff !important;
+    border: 2px solid #ccc !important;
+    padding: 10px !important;
+    width: 100% !important;
+    text-align: left !important;
+    cursor: pointer !important;
+    border-radius: 5px !important;
+    font-size: 14px !important;
+    color: #333 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* DatePicker dropdown açıldığında stil */
+.react-datepicker__triangle {
+    display: none !important;
+    /* Üçgeni gizliyoruz */
+}
+
+.react-datepicker__header {
+    background-color: #2C4154 !important;
+    /* Başlık arka plan rengi */
+    color: white;
+    border-bottom: 1px solid #ddd !important;
+    /* Başlık alt sınırı */
+}
+
+.react-datepicker__current-month {
+    font-size: 16px !important;
+    font-weight: bold !important;
+    color: white !important;
+}
+
+.react-datepicker__day:hover {
+    background-color: #EBEDEF !important;
+    /* Gün hover rengi */
+    color: black !important;
+}
+
+/* .react-datepicker__day--selected {
+    background-color: #2C4154 !important;
+    color: white !important;
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+} */
+
+/* DatePicker input açıldığında özel stil */
+.react-datepicker__month {
+    z-index: 999 !important;
+    /* Diğer öğelerden üstte görünmesi için */
+}
+
+/* DatePicker popup için ekstra stil */
+.react-datepicker__month-container {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 5px !important;
+    background-color: #fff !important;
+}
+
+.ms-22 {
+    margin-left: 20px;
+}
+
+.ms-222 {
+    margin-left: 20px;
+}
+
+.vibeRideButton,
+.vibeStayButton,
+.vibeTourButton {
+    width: 100%;
+    max-width: 300px;
+    /* Buton genişliği sınırlandırılır */
+}
+
+
+.date-picker-input {
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.searchContainer {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.date-picker-container {
+    position: relative;
+}
+
+
+.searchText {
+    font-weight: bold;
+    color: #333;
+}
+
+.searchPText {
+    color: #666;
+    font-size: 12px;
+}
+
+.col-12.col-md-3 {
+    position: relative;
+}
+
+
+/* Hover effect for the date pickers */
+.col-12.col-md-3:hover::before {
+    opacity: 0.6;
+    /* Slightly more visible on hover */
+}
+
+.col-12.col-md-3.border_right {
+    border-right: 1px solid #eee;
+}
+
+.col-12.col-md-3.py-3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+.search:focus {
+    outline: none;
+}
+
+
+
+
+.custom-highlight {
+    background-color: #2C4154 !important;
+
+    color: white !important;
+    /* Siyah yazı */
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+/* Alış tarihi için stil */
+.react-datepicker__day--selected {
+    background-color: #2C4154 !important;
+    color: white !important;
+    border-top-right-radius: 12px !important;
+    border-bottom-left-radius: 12px !important;
+}
+
+
+
+/* Aradaki günler için stil */
+.in-between-date {
+    background-color: #2c415496;
+    color: white !important;
+    border: 0px;
+}
+
+
+
+@media (max-width: 992px) {
+    .ms-22 {
+        margin-left: 20px;
+    }
+
+    .ms-222 {
+        margin-left: 20px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .ms-22 {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .ms-222 {
+        margin-left: 20px;
+    }
+
+    .vibeRideButton,
+    .vibeStayButton,
+    .vibeTourButton {
+        max-width: 100%;
+        /* Mobilde tam genişlik */
+    }
+}
+
+
+/* DatePicker Input Stil */
+.date-picker-input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    color: #333;
+    width: 100%;
+}
+
+.searchContainer {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Mobilde tam genişlik */
+@media (max-width: 768px) {
+    .border_right {
+        border-right: none;
+    }
+
+    .fs-60 {
+        font-size: 37px;
+    }
+
+    .homeBgImage {
+        background-image: url(../Images/home_sectionbg.png);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+        background-position: center;
+        /* Görüntüyü yatay ve dikey ortalar */
+        width: 100%;
+        /* Kapsayıcı genişliği tam yapar */
+        height: auto;
+        /* Yüksekliği içeriğe göre ayarlar */
+    }
+}
+
+/* Orta ekranlar için düzenleme */
+@media (min-width: 768px) {
+    .border_right:not(:last-child) {
+        border-right: 1px solid #ddd;
+    }
+
+    .search {
+        max-width: 150px;
+    }
+}
+
+
+
+.react-datepicker__day-name {
+    color: white !important;
+}
+
+
+
+/* Section 2 */
+.work_to {
+    padding: 9px 32px;
+    width: 199px;
+    border-radius: 6px;
+    color: var(--main-Text-color);
+    background-color: var(--workto-bg-color);
+    text-align: center;
+}
+
+.infoMain {
+    width: 100%;
+    /* Mobilde tam genişlik */
+    max-width: 250px;
+    /* Daha büyük ekranlar için maksimum genişlik */
+    margin: 20px auto;
+    /* Elemanlar arasında boşluk ve merkezleme */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infoIcon {
+    border-radius: 8px;
+    padding: 26px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--mainbg-color);
+    width: 80px;
+    height: 80px;
+}
+
+
+.infoIconP {
+    width: 100%;
+    /* Mobilde tam genişlik */
+    max-width: 250px;
+    /* Daha büyük ekranlarda sınırlama */
+    color: var(--p-text-color);
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Orta ekranlar (tabletler) */
+@media (max-width: 992px) {
+    .infoMain {
+        max-width: 250px;
+        /* Elemanları küçült */
+    }
+
+    .infoIcon {
+        width: 40px;
+        height: 40px;
+        padding: 20px;
+    }
+
+    .infoIcon img {
+        max-width: 60%;
+    }
+}
+
+/* Küçük ekranlar (mobil) */
+@media (max-width: 768px) {
+    .infoMain {
+        width: 100%;
+        margin: 15px 0;
+        /* Üst ve alt boşluk */
+    }
+
+    .infoIcon {
+        width: 90px;
+        height: 90px;
+        padding: 16px;
+    }
+
+    .infoIcon img {
+        max-width: 50%;
+    }
+}
+
+
+
+
+.infoMain3 {
+    height: 100%;
+    min-height: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.infoMainTexth6 {
+    font-weight: 700;
+    color: var(--sectionTwo-infoMainText-color);
+    font-size: 16px;
+    margin-bottom: 7px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--sectionTwo-infoMainTextBorderBottom-color);
+    position: relative;
+
+}
+
+.infoMainTexth6::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--sectionTwo-infoMainBorderRadius-color);
+    position: absolute;
+    right: 0;
+    bottom: -4px;
+}
+
+
+
+.infoMainTexth66 {
+    font-weight: 700;
+    color: var(--sectionTwo-infoMainText-color);
+    font-size: 16px;
+    margin-bottom: 7px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--sectionTwo-infoMainTextBorderBottom-color);
+    position: relative;
+
+}
+
+
+.infoMainTexth66::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--sectionTwo-infoMainBorderRadius-color);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.infoMainTextP {
+    font-weight: 400;
+    color: var(--sectionTwo-infoMainTextP-color);
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+/* Brand List */
+
+/* Genel Container Ayarları */
+.Container {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Başlık Stili */
+.text-start h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Slider Konteyneri */
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+/* Marka Daire Stili */
+.BrandCircle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.BrandCircle:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Marka Görsel Stili */
+.BrandImg {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+}
+
+/* Tooltip Stili */
+.ant-tooltip-inner {
+    font-size: 14px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Slider Okları */
+.slick-prev,
+.slick-next {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Slider Noktaları */
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #999;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #333;
+}
+
+/* Responsive Ayarlar */
+@media (max-width: 768px) {
+    .BrandCircle {
+        width: 70px;
+        height: 70px;
+    }
+
+    .BrandImg {
+        max-width: 60%;
+        max-height: 60%;
+    }
+
+    .text-start h3 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .BrandCircle {
+        width: 50px;
+        height: 50px;
+    }
+
+    .fs-344 {
+        font-size: 30px !important;
+    }
+
+    .BrandImg {
+        max-width: 50%;
+        max-height: 50%;
+    }
+
+    .text-start h3 {
+        font-size: 20px;
+    }
+}
+
+
+
+/* Section 3 */
+
+.audi_sectionTheree {
+    top: 150px;
+}
+
+.infoMain2 {
+    margin: 50px 0px;
+    display: flex;
+}
+
+.infoMainLeftIcon {
+    padding: 20px;
+    background-color: var(--workto-bg-color);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoMainText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.infoMainTextP {
+    color: var(--p-text-color);
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+
+.z-index-2 {
+    z-index: 2;
+}
+
+
+/* Küçük ekranlarda sol sütunu gizler */
+@media (max-width: 992px) {
+    .left-column {
+        display: none;
+    }
+}
+
+/* Sağ sütun tam genişlikte mobilde, büyük ekranlarda 5 kolon genişliğinde */
+@media (max-width: 992px) {
+    .right-column {
+        width: 100%;
+    }
+}
+
+@media (min-width: 993px) {
+    .right-column {
+        width: 41.6667%;
+        /* 5 kolon genişliği */
+    }
+}
+
+.fs-344 {
+    font-size: 34px;
+}
