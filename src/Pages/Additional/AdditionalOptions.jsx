@@ -1,14 +1,14 @@
-import React from 'react'
-import GeneralPrice from '../Additional/components/GeneralPrice'
+import React from 'react';
 
+import GeneralPrice from '../Additional/components/GeneralPrice.jsx';
+import SearchCarCard from '../../Pages/Search/Components/searchCarCard.jsx';
+import GeneralService from '../../Components/GeneralService.jsx';
 
-import "../../Assets/Styles/additionalStyle.css"
-import GeneralService from '../../Components/GeneralService'
-import SearchCarCard from '../Search/components/SearchCarCard'
+import '../../Assets/Styles/additionalStyle.css';
+
 
 function AdditionalOptions() {
     return (
-
         <section>
             <div className="myContainer">
                 <div className="additional-options">
@@ -16,14 +16,13 @@ function AdditionalOptions() {
                         <SearchCarCard />
                     </div>
                     <div className="additional-opt-right">
-                        <GeneralService/>
-                        <GeneralPrice/>
+                        <GeneralService />
+                        <GeneralPrice />
                     </div>
                 </div>
-
             </div>
         </section>
-    )
+    );
 }
 
-export default AdditionalOptions
+export default AdditionalOptions;
