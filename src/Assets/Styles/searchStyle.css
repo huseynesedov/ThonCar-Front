@@ -1,11 +1,18 @@
+.search-cards-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .search-car-card{
     display: flex;
     flex-direction: column;
     width: 625px;
     background-color: red;
-    padding: 10px;
+    padding: 13px;
     border-radius: 6px;
     border: 0.84px solid var(--search-card-border);
+    background-color: var(--search-card-bg);
 }
 
 .search-card-top{
@@ -14,6 +21,7 @@
     padding-bottom: 10px;
     margin-left: 10px;
     .search-card-image{
+        margin-top: 15px;
         margin-right: 10px;
         border-right: 1px solid var(--search-card-border);
     }
@@ -34,6 +42,8 @@
     font-weight: 600;
     font-size: 20px;
     gap: 2px;
+    margin-bottom: 15px;
+    color: var(--search-card-title) ;
 }
 
 .search-card-top .car-features{
@@ -45,6 +55,9 @@
     h6{
         display: flex;
         align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        font-weight: 400;
     }
 }
 
@@ -58,7 +71,7 @@
         display: flex;
         font-size: 13px;
         font-weight: 500;
-        border-bottom: 1px solid red;
+        border-bottom: 1px solid var(--search-card-border);
         h5{
             font-size: 15px;
         }
@@ -75,13 +88,65 @@
 
 .search-card-bottom{
     display: flex;
+    padding-left: 10px;
+    padding-top: 13px;
+    .search-card-bottom-left{
+        display: flex;
+        gap: 28px;
+        align-items: center;
+    }
+    span{
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        font-weight: 500;
+        gap: 2px;
+        p{
+            color: #808080;
+        }
+        .search-card-star{
+            color: #EFBF14;
+        }
+    }
+    h5{
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--search-card-orange);
+        padding-top: 6px;
+    }
+    .search-card-buttons{
+        display: flex;
+        margin-left: 53px;
+        gap: 12px;
+        font-size: 11px;
+        font-weight: 500;
+        transition: all 2s;
+        .details-btn{
+            background-color: #fff;
+            border: 0.75px solid var(--btn-background);
+            border-radius: 4px;
+            transition: all 0.5s;
+            color: var(--btn-background);
+        }
+        .details-btn:hover{
+            opacity: 0.6;
+        }
+        .bron-btn{
+            display: flex;
+            align-items: center;
+            color: #fff;
+            background-color: var(--btn-background);
+            border-radius: 4px;
+            border: 0.75px solid var(--btn-background);
+            gap: 8px;
+            transition: all 0.5s;
+        }
+        .bron-btn:hover{
+            opacity: 0.75;
+        }
+    }
 }
 
 .search-card-bottom span {
     display: flex;
-}
-
-
-.search-card-bottom h5{
-    color: var(--search-card-text);
 }
