@@ -6,13 +6,20 @@
     --btn-background: #2C4154;
     --search-card-title: #393939;
     --search-card-bg: #fff;
+    --additional-titles: #2C4154;
+    --additional-prices: #5F5F5F;
+    --additional-bg: #fff;
 }
 
 body.dark-mode {
     --search-card-features: #CECECE;
+    --search-card-orange: #C85E1C;
     --search-card-price: #C9C7C7;
     --search-card-border: #353535;
     --btn-background: #434343;
     --search-card-title:#C9C7C7;
     --search-card-bg:#1D1F26;
+    --additional-titles: #D5D5D5;
+    --additional-prices: #828282;
+    --additional-bg: #15171E;
 }

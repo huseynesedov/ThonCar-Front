@@ -129,8 +129,7 @@
             color: var(--btn-background);
         }
         .details-btn:hover{
-            background-color: var(--btn-background);
-            color: #fff;
+            opacity: 0.6;
         }
         .bron-btn{
             display: flex;
@@ -143,8 +142,7 @@
             transition: all 0.5s;
         }
         .bron-btn:hover{
-            background-color: #fff;
-            color: var(--btn-background);
+            opacity: 0.75;
         }
     }
 }
