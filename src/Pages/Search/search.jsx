@@ -1,5 +1,5 @@
 import React from 'react'
-import SearchCarCard from './components/SearchCarCard'
+import SearchCarCard from './Components/SearchCarCard.jsx'
 
 import "../../Assets/Styles/searchStyle.css"
 
