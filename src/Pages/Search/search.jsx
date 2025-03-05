@@ -7,7 +7,13 @@ function Search() {
     return (
         <section>
             <div className='myContainer'>
-                <SearchCarCard />
+                <div className="search-cards-list">
+                    <SearchCarCard />
+                    <SearchCarCard />
+                    <SearchCarCard />
+                    <SearchCarCard />
+
+                </div>
 
             </div>
         </section>

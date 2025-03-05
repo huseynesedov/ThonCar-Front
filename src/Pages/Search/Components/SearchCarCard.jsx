@@ -3,9 +3,9 @@ import images from '../../../Assets/Images/js/images'
 
 // React Icons
 import { TbManualGearboxFilled } from "react-icons/tb";
-import { FaGasPump, FaRegIdCard } from "react-icons/fa6";
+import { FaGasPump, FaRegIdCard, FaArrowRight } from "react-icons/fa6";
 import { IoSpeedometerOutline } from "react-icons/io5";
-import { MdOutlineDirectionsCar } from "react-icons/md";
+import { MdOutlineDirectionsCar, MdOutlineStar  } from "react-icons/md";
 import { FaRegUser } from "react-icons/fa";
 
 
@@ -13,7 +13,7 @@ function SearchCarCard() {
     return (
         <div className='search-car-card'>
             <div className="search-card-top">
-                <div className="search-card-image"><img src={images.carPhoto} alt="" /></div>
+                <div className="search-card-image"><img src={images.searchCar} alt="" /></div>
                 <div className="search-card-content">
                     <div className="search-card-content-left">
                         <div className="car-brand">
@@ -40,12 +40,14 @@ function SearchCarCard() {
                 </div>
             </div>
             <div className="search-card-bottom">
+                <div className="search-card-bottom-left">
                 <div className="company-logo"><img src={images.companyLogo} alt="" /></div>
-                <span>4.8 <p>(2.436 reviews)</p></span>
+                <span><MdOutlineStar className='search-card-star' /> 4.8 <p>(2.436 reviews)</p></span>
                 <h5>Depozit: 40%</h5>
+                </div>
                 <div className="search-card-buttons">
-                    <button>Details</button>
-                    <button>indi bron et</button>
+                    <button className='details-btn'>Details</button>
+                    <button className='bron-btn'>İndi bron et<FaArrowRight/></button>
                 </div>
             </div>
         </div>

@@ -3,10 +3,16 @@
     --search-card-orange: #FF6200;
     --search-card-price: #2C4154;
     --search-card-border: #C7C7C7;
+    --btn-background: #2C4154;
+    --search-card-title: #393939;
+    --search-card-bg: #fff;
 }
 
 body.dark-mode {
     --search-card-features: #CECECE;
     --search-card-price: #C9C7C7;
     --search-card-border: #353535;
+    --btn-background: #434343;
+    --search-card-title:#C9C7C7;
+    --search-card-bg:#1D1F26;
 }

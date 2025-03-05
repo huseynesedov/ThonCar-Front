@@ -57,5 +57,32 @@ export default {
      Facebook,
      Google,
      Apple,
+
+
+
+
+
+
+
+
+
+
+
+
+
+     searchCar,
+     brandLogo,
+     companyLogo
      
 }
+
+
+
+
+
+
+
+
+import searchCar from '../search/searchCar.svg'
+import brandLogo from '../search/brandLogo.svg'
+import companyLogo from '../search/companyLogo.svg'
