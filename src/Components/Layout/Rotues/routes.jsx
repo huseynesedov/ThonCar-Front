@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes, useParams, Navigate } from "react-router-dom";
+
 import Home from "../../../Pages/Home/index";
 import Search from "../../../Pages/Search/search";
 import AdditionalOptions from "../../../Pages/Additional/AdditionalOptions";
