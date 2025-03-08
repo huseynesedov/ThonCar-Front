@@ -3,6 +3,7 @@ import { Route, Routes, useParams, Navigate } from "react-router-dom";
 import Home from "../../../Pages/Home/index";
 import Search from "../../../Pages/Search/search";
 import AdditionalOptions from "../../../Pages/Additional/AdditionalOptions";
+import NoResult from "../../../Pages/NoResult/NoResult";
 
 const Wrapper = ({ Component }) => {
   const { lang } = useParams();
@@ -26,6 +27,7 @@ const RouteList = () => {
               <Route path="/:lang" element={<Wrapper Component={Home} />} />
               <Route path="/:lang/search" element={<Wrapper Component={Search} />} />
               <Route path="/:lang/additional-options" element={<Wrapper Component={AdditionalOptions}/>}/>
+              <Route path="/:lang/no-result" element={<Wrapper Component={NoResult}/>}/>
             </Routes>
           </>
         }

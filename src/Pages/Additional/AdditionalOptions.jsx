@@ -1,7 +1,7 @@
 import React from 'react';
 
-import GeneralPrice from '../Additional/components/GeneralPrice.jsx';
-import SearchCarCard from '../../Pages/Search/components/searchCarCard.jsx';
+import GeneralPrice from './components/GeneralPrice.jsx';
+import SearchCarCard from '../Search/Components/searchCarCard.jsx';
 import GeneralService from '../../Components/GeneralService.jsx';
 
 import '../../Assets/Styles/additionalStyle.css';
