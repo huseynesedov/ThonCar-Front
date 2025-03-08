@@ -1,0 +1,52 @@
+.no-result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    .no-result-img{
+        margin-bottom: 30px;
+    }
+    h1{
+        margin-bottom: 40px;
+        font-weight: 600;
+        font-size: 32px;
+    }
+    p{
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .no-result-buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        gap: 20px;
+        button{
+            width: 311px;
+            height: 38px;
+            border: none;
+            border-radius: 4px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .first-btn{
+            background-color: red;
+            background-color: var(--additional-titles);
+            color: var(--search-card-bg);
+            transition: all 0.5s;
+        }
+        .first-btn:hover{
+            opacity: 0.7;
+        }
+        .second-btn{
+            background: none;
+            border: 1px solid var(--additional-titles);
+            color: var(--additional-titles);
+            transition: all 0.5s;
+        }
+        .second-btn:hover{
+            opacity: 0.7;
+        }
+    }
+}
