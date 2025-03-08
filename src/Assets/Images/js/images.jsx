@@ -72,7 +72,8 @@ export default {
 
      searchCar,
      brandLogo,
-     companyLogo
+     companyLogo,
+     noResult
      
 }
 
@@ -86,3 +87,4 @@ export default {
 import searchCar from '../search/searchCar.svg'
 import brandLogo from '../search/brandLogo.svg'
 import companyLogo from '../search/companyLogo.svg'
+import noResult from '../noResult/noResult.svg'

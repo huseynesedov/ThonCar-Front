@@ -122,11 +122,11 @@
         font-weight: 500;
         transition: all 2s;
         .details-btn{
-            background-color: #fff;
+            background: none;
             border: 0.75px solid var(--btn-background);
             border-radius: 4px;
             transition: all 0.5s;
-            color: var(--btn-background);
+            color: var(--search-card-border);
         }
         .details-btn:hover{
             opacity: 0.6;
