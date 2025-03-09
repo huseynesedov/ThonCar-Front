@@ -5,12 +5,13 @@ const SectionTwo = () => {
     return (
         <>
             <section className='mt-5'>
+             
                 <div className="myContainer">
                     <div className="row">
                         <div className='col-md-12 d-flex justify-content-center'>
                             <div className='work_to'>
                                 <p className='fs-14 fw-500'>
-                                    Necə İşləyir
+                                    Necə ?
                                 </p>
                             </div>
                         </div>
@@ -18,7 +19,7 @@ const SectionTwo = () => {
                     <div className="row">
                         <div className="col-md-12 d-flex justify-content-center mt-4">
                             <h3 className='searchText2'>
-                                Aşağıdakı 3 addım ilə maşın icarəyə götürün
+                            Sadə, sürətli və rahat: 3 addımda avtomobil icarəsi.
                             </h3>
                         </div>
 
@@ -29,7 +30,7 @@ const SectionTwo = () => {
                                         <img src={images.location_tick} alt="ThonCar-LocationTick" />
                                     </div>
                                     <div className='d-flex align-items-center flex-column mt-4'>
-                                        <p className='fs-16 searchText'>
+                                        <p className='fs-16 searchText2'>
                                             Məkan seçin
                                         </p>
                                         <p className='fs-14 infoIconP'>

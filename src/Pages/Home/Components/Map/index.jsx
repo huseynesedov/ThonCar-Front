@@ -1,31 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { GoogleMap, LoadScript, Marker, InfoWindow } from "@react-google-maps/api";
 
 const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
 
 const MapComponent = () => {
-    const [userLocation, setUserLocation] = useState(null);
     const [selectedMarker, setSelectedMarker] = useState(null);
 
 
-    // Istifadecinin mekani alinir
-    useEffect(() => {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(
-                (position) => {
-                    const { latitude, longitude } = position.coords;
-                    setUserLocation({ lat: latitude, lng: longitude });
-                },
-                (error) => {
-                    console.error("Geolocation error:", error);
-                    // Eger konum alina bilmezse default konum olacaq
-                    setUserLocation({ lat: 40.3987968, lng: 49.8622502 });
-                }
-            );
-        } else {
-            console.log("Geolocation is not supported by this browser.");
-        }
-    }, []);
+    
 
     const coordinates = [
         { lat: 40.3987968, lng: 49.8622502, info: "Location 1: Bakı" },
@@ -41,22 +23,16 @@ const MapComponent = () => {
         <section>
             <div className="myContainer mt-5">
                 <div className="row">
-                    <h4 className="fs-344 my-5">Sizə yaxın ünvandayıq !</h4>
+                    <h4 className="fs-344 MapText my-5">Sizə yaxın ünvandayıq !</h4>
 
                     <LoadScript googleMapsApiKey={apiKey}>
                         <GoogleMap
                             id="example-map"
                             mapContainerStyle={{ width: "100%", height: "400px" }}
-                            center={userLocation || { lat: 40.3987968, lng: 49.8622502 }} // Istifadecinin mekani varsa, yoxdursa onu merkez edir
-                            zoom={12}
+                            center={{ lat: 40.4299968, lng: 49.9622502 }} // Istifadecinin mekani varsa, yoxdursa onu merkez edir
+                            zoom={11}
                         >
-                            {/* Istifadeci */}
-                            {userLocation && (
-                                <Marker
-                                    position={userLocation}
-                                    title="Your Location"
-                                />
-                            )}
+                           
 
                             {/* Şirketlerin mekanları */}
                             {coordinates.map((coordinate, index) => (

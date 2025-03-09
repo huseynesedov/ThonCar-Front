@@ -22,10 +22,12 @@ import location_section_icon from '../thon icon (4).svg';
 
 //section 1
 import metro_logo from '../metro-icon.jpeg';
-
-
 // section 2
+import sectionTwoLine from '../dashed-line.svg';
+
+// section 3
 import prius from '../getImage.png';
+
 
 // Modal
 import Facebook from '../facebook-icon-gray.svg';
@@ -57,7 +59,7 @@ export default {
      Facebook,
      Google,
      Apple,
-
+     sectionTwoLine,
 
 
 
@@ -74,7 +76,7 @@ export default {
      brandLogo,
      companyLogo,
      noResult
-     
+
 }
 
 

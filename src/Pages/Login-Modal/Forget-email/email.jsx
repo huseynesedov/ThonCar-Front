@@ -5,7 +5,7 @@ import { FaArrowLeftLong } from 'react-icons/fa6';
 import Otpcode from '../Forget-otpcode/otpCode';
 
 
-const Email = ({ handleClose, show, openLogin }) => {
+const Email = ({ handleClose, show, setShow, openLogin }) => {
     const [isFocused, setIsFocused] = useState(false);
     const [inputValue, setInputValue] = useState('');
 
@@ -38,6 +38,18 @@ const Email = ({ handleClose, show, openLogin }) => {
         setTimeout(() => {
             setShowOtpCode(true);
         }, 400);
+    };
+
+
+
+
+    const openEmail = () => {
+        setClosing(true);
+        setTimeout(() => {
+            setShowOtpCode(false);
+            setShow(true);
+            setClosing(false);
+        }, 1);
     };
 
 
@@ -97,7 +109,7 @@ const Email = ({ handleClose, show, openLogin }) => {
             <Otpcode
                 show={showOtpCode}
                 handleClose={handleModalClose}
-                openEmail={openLogin}
+                openEmail={openEmail}
             />
 
         </>

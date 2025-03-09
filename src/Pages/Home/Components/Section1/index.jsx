@@ -48,13 +48,13 @@ const SectionOne = () => {
     <section className="homeBgImage">
       <div className="myContainer">
         <div className="row">
-          <div className="col-md-12 d-flex flex-column align-items-center justify-content-center">
+          <div className="col-md-12 basliq d-flex flex-column align-items-center justify-content-center">
             <h2 className="searchText fs-60 mt-5">Axtar, Tap və Kirala!</h2>
             <h4 className="searchText fw-400 mt-2">Sənin üçün ən uyğun vasitəçi.</h4>
           </div>
         </div>
 
-        <div className="row bg-white searchContainer align-items-center" style={{ marginTop: "70px" }}>
+        <div className="row searchContainer align-items-center" style={{ marginTop: "70px" }}>
           {/* Məkan Seçimi (İç-içə Dropdown) */}
           <div
             ref={locationRef}
@@ -62,7 +62,7 @@ const SectionOne = () => {
             
           >
             <img src={images.location_home} alt="ThonCar-Location" />
-            <div className="d-flex flex-column ms-2" style={{ cursor: "pointer" }}>
+            <div className="d-flex searchTextMain flex-column ms-2" style={{ cursor: "pointer" }}>
               <p className="fs-16 searchText">Məkan</p>
               <p className="fs-14 searchPText">Məkanınızı seçin</p>
             </div>
@@ -73,8 +73,8 @@ const SectionOne = () => {
           {/* Alma tarixi */}
           <div ref={datePickerContainerRef1} className="col-12 col-md-3 border_right d-flex align-items-center py-3" onClick={() => setIsOpen1((prev) => !prev)}>
             <img src={images.calendar_home} alt="ThonCar-Calendar" />
-            <div className="d-flex flex-column ms-2">
-              <p className="fs-16 searchText">Alma tarixi</p>
+            <div className="d-flex searchTextMain flex-column ms-2">
+              <p className="fs-16 searchText">Alış tarixi</p>
               <DatePicker selected={startDate1} onChange={setStartDate1} dateFormat="dd.MM.yyyy" className="date-picker-input" minDate={tomorrow} />
             </div>
           </div>
@@ -82,7 +82,7 @@ const SectionOne = () => {
           {/* Qayidiş tarixi */}
           <div ref={datePickerContainerRef2} className="col-12 col-md-3 border_right d-flex align-items-center py-3" onClick={() => setIsOpen2((prev) => !prev)}>
             <img src={images.calendar_home} alt="ThonCar-Calendar" />
-            <div className="d-flex flex-column ms-2">
+            <div className="d-flex searchTextMain flex-column ms-2">
               <p className="fs-16 searchText">Qayidiş tarixi</p>
               <DatePicker selected={startDate2} onChange={setStartDate2} dateFormat="dd.MM.yyyy" className="date-picker-input" minDate={new Date(startDate1.getTime() + 24 * 60 * 60 * 1000)} />
             </div>

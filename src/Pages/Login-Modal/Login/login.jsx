@@ -147,6 +147,7 @@ const Login = ({ handleClose, show, setShow }) => {
                 show={showForgetEmail}
                 handleClose={handleModalClose}
                 openLogin={openLogin}
+                setShow={setShowForgetEmail}
             />
         </>
     );

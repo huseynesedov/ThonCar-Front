@@ -10,9 +10,12 @@
     opacity: 0;
 }
 
+.modal-content {
+    background-color: var(--modal-bg-color) !important;
+}
+
 .modalll{
-    margin-left: 25px;
-    margin-right: 31px;
+    margin: 0 20px;
 }
 
 /* Açılışta modal */
@@ -76,7 +79,7 @@
 }
 
 
-.ModalPEmail{
+.ModalPEmail {
     color: var(--EmailModal-TextP-color);
 }
 
@@ -96,6 +99,8 @@
     padding: 12px 36px 12px 8px;
     font-size: 16px;
     border: 1px solid #ccc;
+    color: var(--loginModal-inputPlaceholder-text-color);
+    background-color: transparent;
     border-radius: 4px;
     outline: none;
     transition: border-color 0.5s ease, background-color 0.5s ease, color 0.5s ease;
@@ -122,7 +127,7 @@
     left: 8px;
     font-size: 12px;
     color: var(--loginModal-inputBorder-color);
-    background-color: white;
+    background-color: var(--loginModal-input-bg-color);
     padding: 0 4px;
     transition: all 0.5s ease;
 
@@ -158,7 +163,9 @@
     width: 100%;
     padding: 12px 36px 12px 8px;
     font-size: 16px;
+    color: var(--loginModal-inputPlaceholder-text-color);
     border: 1px solid #ccc;
+    background-color: transparent;
     border-radius: 4px;
     outline: none;
     transition: border-color 0.5s ease, background-color 0.5s ease, color 0.5s ease;
@@ -181,7 +188,7 @@
     left: 8px;
     font-size: 12px;
     color: var(--loginModal-inputBorder-color);
-    background-color: white;
+    background-color: var(--loginModal-input-bg-color);
     padding: 0 4px;
 }
 
@@ -249,7 +256,7 @@
     border-top: 1px solid var(--loginModal-TextPHeader-color);
 
     p {
-        background-color: white;
+        background-color: var(--modal-bg-color);
         padding-left: 14px;
         padding-right: 14px;
         top: -14px;
@@ -271,7 +278,7 @@
 
 
 @media (max-width: 768px) {
-  .mt-My1{
-    margin-top: 27px;
-  }
-  }
+    .mt-My1 {
+        margin-top: 27px;
+    }
+}

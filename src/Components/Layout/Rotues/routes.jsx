@@ -24,11 +24,13 @@ const RouteList = () => {
         element={
           <>
             <Routes>
+
               <Route path="/" element={<Navigate to="/az" />} />
               <Route path="/:lang" element={<Wrapper Component={Home} />} />
               <Route path="/:lang/search" element={<Wrapper Component={Search} />} />
               <Route path="/:lang/additional-options" element={<Wrapper Component={AdditionalOptions}/>}/>
               <Route path="/:lang/no-result" element={<Wrapper Component={NoResult}/>}/>
+            
             </Routes>
           </>
         }

@@ -7,8 +7,11 @@ body {
   box-sizing: border-box;
 }
 
+
+
 #root {
   font-family: "Work Sans", serif;
+  background-color: var(--mainbg-color);
 }
 
 a {
@@ -18,23 +21,46 @@ a {
 
 /* Light mode */
 :root {
-/* Header */
---headerbg-color:#EBEDEF;
-  --mainbg-color: #EBEDEF;
   --main-Text-color: #2C4154;
-  --p-text-color: #6D6D6D;
-  --workto-bg-color: #EBEDEF;
   --mainimportantext-color: #222B45;
   --helpnumber-text-color: #4C6983;
+
+
+  /* Header */
+  --headerbg-color: #EBEDEF;
+
+  /* Login-Modal */
+  --modal-bg-color: #FFFFFF;
+
   --login-border-color: #2C4154;
   --search-bg-color: #2C4154;
   --viberide-buttonbg-color: #ffffff;
   --search-text-color: #B6B6B6;
+  --login-text-color: #2C4154;
+
+  /* Section 1 */
+  --sectionOne-bg-image: url(./src/Assets/Images/thon-1-light.jpg);
+  --sectionOne-h2-color: #222B45;
+  --sectionOne-h4-color: #446079;
+  --searchContainer-bg-color: #FFFFFF;
+
+  --searchContainer-searchTextMain-color: #3E3E3E;
+  --searchContainer-searchTextP-color: #B6B6B6;
+  --searchContainer-datePicker-placeholder-color: #B6B6B6;
+  --searchContainer-datePicker-border-color: #ACACAC;
+
   /* Section 2 */
+  --workto-bg-color: #EBEDEF;
   --sectionTwo-infoMainText-color: #444444;
   --sectionTwo-infoMainTextBorderBottom-color: #2C4154;
   --sectionTwo-infoMainBorderRadius-color: #2C4154;
   --sectionTwo-infoMainTextP-color: #6D6D6D;
+  --p-text-color: #A1A1A1;
+
+
+  /* Section 4 - Map */
+  --main-text-color: #000000;
+
   /* Modal */
   --loginModal-TextPHeader-color: #B7B7B7;
   --loginModal-TextPLogin-color: #2C4154;
@@ -43,6 +69,8 @@ a {
   --loginModal-inputBorder-color: #2C4154;
   --loginModal-inputBG-color: #2C4154;
   --loginModal-inputBGText-color: #FFFFFF;
+  --loginModal-input-bg-color: #FFFFFF;
+  --loginModal-inputPlaceholder-text-color: #000000;
 
   --EmailModal-TextP-color: #4387C6;
 
@@ -53,15 +81,46 @@ a {
 }
 
 body.dark-mode {
---headerbg-color:#15171EF5;
+  --headerbg-color: #15171EF5;
+  --mainbg-color: #15171E;
 
-  --mainbg-color: #1C1C1C;
+  /* Login-modal */
+
+  --modal-bg-color: #15171E;
+  --loginModal-TextPHeader-color: #AEAEAE;
+  --loginModal-TextPLogin-color: #D6D6D6;
+  --loginModal-input-bg-color: #15171E;
+  --loginModal-inputBorder-color: #C1C1C1;
+  --loginModal-inputPlaceholder-text-color: #FFFFFF;
+
+
+
+  --login-text-color: #B7CEE3;
+  --login-border-color: #E0E0E0;
+
+  /* Section 1 */
+  --sectionOne-bg-image: url(./src/Assets/Images/thon-1.jpg);
+  --sectionOne-h2-color: #C3DAEE;
+  --sectionOne-h4-color: #7490AA;
+  --searchContainer-bg-color: #212227;
+
+  --searchContainer-searchTextMain-color: #CECECE;
+  --searchContainer-searchTextP-color: #A4B4C2;
+  --searchContainer-datePicker-placeholder-color: #A4B4C2;
+  --searchContainer-datePicker-border-color: #7B7B7B;
+
+  /* Section 2 */
+  --workto-bg-color: #212227;
+  --sectionTwo-text-color: #C3DAEE;
+  --p-text-color: #A1A1A1;
+
+
+  /* Section 4 - Map */
+  --main-text-color: #9E9E9E;
+
   --main-Text-color: #E0E0E0;
-  --p-text-color: #B3B3B3;
-  --workto-bg-color: #1C1C1C;
   --mainimportantext-color: #A0A0A0;
   --helpnumber-text-color: #B0B0B0;
-  --login-border-color: #E0E0E0;
   --search-bg-color: #333333;
   --viberide-buttonbg-color: #333333;
   --search-text-color: #B3B3B3;
@@ -69,6 +128,10 @@ body.dark-mode {
   --footer-textOne-color: #B0B0B0;
   --footer-buttonbg-color: #4C4C4C;
   --footer-button-text-color: #FFFFFF;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .myContainer {
